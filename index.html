@@ -11,132 +11,188 @@
 
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/animate-demo.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-	<header class="site__header island">
-		<div class="wrap">
-			<span class="" id="animationSandbox" style="display: block;">
-				<h1 class="site__title mega">animation</h1>
-			</span>
-		</div>
-	</header>
+	<nav class="top-menu">
+		<ul>
+			<li><span>Анимации</span></li>
+			<li><a href="animocons.html">Иконки</a></li>
+		</ul>
+	</nav>
 
-	<main class="site__content island">
-		<div class="wrap">
-			<form>
-				<button class="butt js--triggerAnimation">Animate it</button>
-			</form>
-			<hr>
-		</div>
-	</main>
+	<div class="container container-animate">
+		<header class="site__header island">
+			<div class="wrap">
+				<span class="" id="animationSandbox" style="display: block;">
+					<h1 class="site__title mega">animation</h1>
+				</span>
+			</div>
+		</header>
 
-	<form class="input input--dropdown js--animations">
-		<div class="category">
-			<strong>Attention Seekers</strong><br>
-			<input type="radio" name="effect" value="bounce" id="bounce"><label for="bounce"> bounce</label><br>
-			<input type="radio" name="effect" value="flash" id="flash"><label for="flash"> flash</label><br>
-			<input type="radio" name="effect" value="pulse" id="pulse"><label for="pulse"> pulse</label><br>
-			<input type="radio" name="effect" value="rubberBand" id="rubberBand"><label for="rubberBand"> rubberBand</label><br>
-			<input type="radio" name="effect" value="shake" id="shake"><label for="shake"> shake</label><br>
-			<input type="radio" name="effect" value="swing" id="swing"><label for="swing"> swing</label><br>
-			<input type="radio" name="effect" value="tada" id="tada"><label for="tada"> tada</label><br>
-			<input type="radio" name="effect" value="wobble" id="wobble"><label for="wobble"> wobble</label><br>
-			<input type="radio" name="effect" value="jello" id="jello"><label for="jello"> jello</label><br>
-		</div>
-		<div class="category">
-			<strong>Bouncing Entrances</strong><br>
-			<input type="radio" name="effect" value="bounceIn" id="bounceIn"><label for="bounceIn"> bounceIn</label><br>
-			<input type="radio" name="effect" value="bounceInDown" id="bounceInDown"><label for="bounceInDown"> bounceInDown</label><br>
-			<input type="radio" name="effect" value="bounceInLeft" id="bounceInLeft"><label for="bounceInLeft"> bounceInLeft</label><br>
-			<input type="radio" name="effect" value="bounceInRight" id="bounceInRight"><label for="bounceInRight"> bounceInRight</label><br>
-			<input type="radio" name="effect" value="bounceInUp" id="bounceInUp"><label for="bounceInUp"> bounceInUp</label><br><br><strong>Bouncing Exits</strong><br>
-			<input type="radio" name="effect" value="bounceOut" id="bounceOut"><label for="bounceOut"> bounceOut</label><br>
-			<input type="radio" name="effect" value="bounceOutDown" id="bounceOutDown"><label for="bounceOutDown"> bounceOutDown</label><br>
-			<input type="radio" name="effect" value="bounceOutLeft" id="bounceOutLeft"><label for="bounceOutLeft"> bounceOutLeft</label><br>
-			<input type="radio" name="effect" value="bounceOutRight" id="bounceOutRight"><label for="bounceOutRight"> bounceOutRight</label><br>
-			<input type="radio" name="effect" value="bounceOutUp" id="bounceOutUp"><label for="bounceOutUp"> bounceOutUp</label><br>
-		</div>
-		<div class="category">
-			<strong>Fading Entrances</strong><br>
-			<input type="radio" name="effect" value="fadeIn" id="fadeIn"><label for="fadeIn"> fadeIn</label><br>
-			<input type="radio" name="effect" value="fadeInDown" id="fadeInDown"><label for="fadeInDown"> fadeInDown</label><br>
-			<input type="radio" name="effect" value="fadeInDownBig" id="fadeInDownBig"><label for="fadeInDownBig"> fadeInDownBig</label><br>
-			<input type="radio" name="effect" value="fadeInLeft" id="fadeInLeft"><label for="fadeInLeft"> fadeInLeft</label><br>
-			<input type="radio" name="effect" value="fadeInLeftBig" id="fadeInLeftBig"><label for="fadeInLeftBig"> fadeInLeftBig</label><br>
-			<input type="radio" name="effect" value="fadeInRight" id="fadeInRight"><label for="fadeInRight"> fadeInRight</label><br>
-			<input type="radio" name="effect" value="fadeInRightBig" id="fadeInRightBig"><label for="fadeInRightBig"> fadeInRightBig</label><br>
-			<input type="radio" name="effect" value="fadeInUp" id="fadeInUp"><label for="fadeInUp"> fadeInUp</label><br>
-			<input type="radio" name="effect" value="fadeInUpBig" id="fadeInUpBig"><label for="fadeInUpBig"> fadeInUpBig</label><br>
-		</div>
-		<div class="category">
-			<strong>Fading Exits</strong><br>
-			<input type="radio" name="effect" value="fadeOut" id="fadeOut"><label for="fadeOut"> fadeOut</label><br>
-			<input type="radio" name="effect" value="fadeOutDown" id="fadeOutDown"><label for="fadeOutDown"> fadeOutDown</label><br>
-			<input type="radio" name="effect" value="fadeOutDownBig" id="fadeOutDownBig"><label for="fadeOutDownBig"> fadeOutDownBig</label><br>
-			<input type="radio" name="effect" value="fadeOutLeft" id="fadeOutLeft"><label for="fadeOutLeft"> fadeOutLeft</label><br>
-			<input type="radio" name="effect" value="fadeOutLeftBig" id="fadeOutLeftBig"><label for="fadeOutLeftBig"> fadeOutLeftBig</label><br>
-			<input type="radio" name="effect" value="fadeOutRight" id="fadeOutRight"><label for="fadeOutRight"> fadeOutRight</label><br>
-			<input type="radio" name="effect" value="fadeOutRightBig" id="fadeOutRightBig"><label for="fadeOutRightBig"> fadeOutRightBig</label><br>
-			<input type="radio" name="effect" value="fadeOutUp" id="fadeOutUp"><label for="fadeOutUp"> fadeOutUp</label><br>
-			<input type="radio" name="effect" value="fadeOutUpBig" id="fadeOutUpBig"><label for="fadeOutUpBig"> fadeOutUpBig</label><br>
-		</div>
-		<div class="category">
-			<strong>Flippers</strong><br>
-			<input type="radio" name="effect" value="flip" id="flip"><label for="flip"> flip</label><br>
-			<input type="radio" name="effect" value="flipInX" id="flipInX"><label for="flipInX"> flipInX</label><br>
-			<input type="radio" name="effect" value="flipInY" id="flipInY"><label for="flipInY"> flipInY</label><br>
-			<input type="radio" name="effect" value="flipOutX" id="flipOutX"><label for="flipOutX"> flipOutX</label><br>
-			<input type="radio" name="effect" value="flipOutY" id="flipOutY"><label for="flipOutY"> flipOutY</label><br>
-			<br><strong>Lightspeed</strong><br>
-			<input type="radio" name="effect" value="lightSpeedIn" id="lightSpeedIn"><label for="lightSpeedIn"> lightSpeedIn</label><br>
-			<input type="radio" name="effect" value="lightSpeedOut" id="lightSpeedOut"><label for="lightSpeedOut"> lightSpeedOut</label><br>
-			<br><strong>Specials</strong><br>
-			<input type="radio" name="effect" value="hinge" id="hinge"><label for="hinge"> hinge</label><br>
-			<input type="radio" name="effect" value="rollIn" id="rollIn"><label for="rollIn"> rollIn</label><br>
-			<input type="radio" name="effect" value="rollOut" id="rollOut"><label for="rollOut"> rollOut</label><br>
-		</div>
-		<div class="category">
-			<strong>Rotating Entrances</strong><br>
-			<input type="radio" name="effect" value="rotateIn" id="rotateIn"><label for="rotateIn"> rotateIn</label><br>
-			<input type="radio" name="effect" value="rotateInDownLeft" id="rotateInDownLeft"><label for="rotateInDownLeft"> rotateInDownLeft</label><br>
-			<input type="radio" name="effect" value="rotateInDownRight" id="rotateInDownRight"><label for="rotateInDownRight"> rotateInDownRight</label><br>
-			<input type="radio" name="effect" value="rotateInUpLeft" id="rotateInUpLeft"><label for="rotateInUpLeft"> rotateInUpLeft</label><br>
-			<input type="radio" name="effect" value="rotateInUpRight" id="rotateInUpRight"><label for="rotateInUpRight"> rotateInUpRight</label><br>
-			<br><strong>Rotating Exits</strong><br>
-			<input type="radio" name="effect" value="rotateOut" id="rotateOut"><label for="rotateOut"> rotateOut</label><br>
-			<input type="radio" name="effect" value="rotateOutDownLeft" id="rotateOutDownLeft"><label for="rotateOutDownLeft"> rotateOutDownLeft</label><br>
-			<input type="radio" name="effect" value="rotateOutDownRight" id="rotateOutDownRight"><label for="rotateOutDownRight"> rotateOutDownRight</label><br>
-			<input type="radio" name="effect" value="rotateOutUpLeft" id="rotateOutUpLeft"><label for="rotateOutUpLeft"> rotateOutUpLeft</label><br>
-			<input type="radio" name="effect" value="rotateOutUpRight" id="rotateOutUpRight"><label for="rotateOutUpRight"> rotateOutUpRight</label><br>
-		</div>
-		<div class="category">
-			<strong>Zoom Entrances</strong><br>
-			<input type="radio" name="effect" value="zoomIn" id="zoomIn"><label for="zoomIn"> zoomIn</label><br>
-			<input type="radio" name="effect" value="zoomInDown" id="zoomInDown"><label for="zoomInDown"> zoomInDown</label><br>
-			<input type="radio" name="effect" value="zoomInLeft" id="zoomInLeft"><label for="zoomInLeft"> zoomInLeft</label><br>
-			<input type="radio" name="effect" value="zoomInRight" id="zoomInRight"><label for="zoomInRight"> zoomInRight</label><br>
-			<input type="radio" name="effect" value="zoomInUp" id="zoomInUp"><label for="zoomInUp"> zoomInUp</label><br>
-			<br><strong>Zoom Exits</strong><br>
-			<input type="radio" name="effect" value="zoomOut" id="zoomOut"><label for="zoomOut"> zoomOut</label><br>
-			<input type="radio" name="effect" value="zoomOutDown" id="zoomOutDown"><label for="zoomOutDown"> zoomOutDown</label><br>
-			<input type="radio" name="effect" value="zoomOutLeft" id="zoomOutLeft"><label for="zoomOutLeft"> zoomOutLeft</label><br>
-			<input type="radio" name="effect" value="zoomOutRight" id="zoomOutRight"><label for="zoomOutRight"> zoomOutRight</label><br>
-			<input type="radio" name="effect" value="zoomOutUp" id="zoomOutUp"><label for="zoomOutUp"> zoomOutUp</label><br>
-		</div>
-		<div class="category">
-			<strong>Sliding Entrances</strong><br>
-			<input type="radio" name="effect" value="slideInUp" id="slideInUp"><label for="slideInUp"> slideInUp</label><br>
-			<input type="radio" name="effect" value="slideInDown" id="slideInDown"><label for="slideInDown"> slideInDown</label><br>
-			<input type="radio" name="effect" value="slideInLeft" id="slideInLeft"><label for="slideInLeft"> slideInLeft</label><br>
-			<input type="radio" name="effect" value="slideInRight" id="slideInRight"><label for="slideInRight"> slideInRight</label><br>
-			<br><strong>Sliding Exits</strong><br>
-			<input type="radio" name="effect" value="slideOutUp" id="slideOutUp"><label for="slideOutUp"> slideOutUp</label><br>
-			<input type="radio" name="effect" value="slideOutDown" id="slideOutDown"><label for="slideOutDown"> slideOutDown</label><br>
-			<input type="radio" name="effect" value="slideOutLeft" id="slideOutLeft"><label for="slideOutLeft"> slideOutLeft</label><br>
-			<input type="radio" name="effect" value="slideOutRight" id="slideOutRight"><label for="slideOutRight"> slideOutRight</label><br>
-		</div>
-	</form>
+		<main class="site__content island">
+			<div class="wrap">
+				<form>
+					<button class="butt js--triggerAnimation">Animate it</button>
+				</form>
+				<hr>
+			</div>
+		</main>
+
+		<form class="input input--dropdown js--animations">
+			<div class="category">
+				<strong>Attention Seekers</strong><br>
+				<input type="radio" name="effect" value="bounce" id="bounce"><label for="bounce"> bounce</label><br>
+				<input type="radio" name="effect" value="flash" id="flash"><label for="flash"> flash</label><br>
+				<input type="radio" name="effect" value="pulse" id="pulse"><label for="pulse"> pulse</label><br>
+				<input type="radio" name="effect" value="rubberBand" id="rubberBand"><label for="rubberBand">
+				rubberBand</label><br>
+				<input type="radio" name="effect" value="shake" id="shake"><label for="shake"> shake</label><br>
+				<input type="radio" name="effect" value="swing" id="swing"><label for="swing"> swing</label><br>
+				<input type="radio" name="effect" value="tada" id="tada"><label for="tada"> tada</label><br>
+				<input type="radio" name="effect" value="wobble" id="wobble"><label for="wobble"> wobble</label><br>
+				<input type="radio" name="effect" value="jello" id="jello"><label for="jello"> jello</label><br>
+			</div>
+			<div class="category">
+				<strong>Bouncing Entrances</strong><br>
+				<input type="radio" name="effect" value="bounceIn" id="bounceIn"><label for="bounceIn"> bounceIn</label><br>
+				<input type="radio" name="effect" value="bounceInDown" id="bounceInDown"><label for="bounceInDown">
+				bounceInDown</label><br>
+				<input type="radio" name="effect" value="bounceInLeft" id="bounceInLeft"><label for="bounceInLeft">
+				bounceInLeft</label><br>
+				<input type="radio" name="effect" value="bounceInRight" id="bounceInRight"><label for="bounceInRight">
+				bounceInRight</label><br>
+				<input type="radio" name="effect" value="bounceInUp" id="bounceInUp"><label for="bounceInUp">
+				bounceInUp</label><br><br><strong>Bouncing Exits</strong><br>
+				<input type="radio" name="effect" value="bounceOut" id="bounceOut"><label for="bounceOut"> bounceOut</label><br>
+				<input type="radio" name="effect" value="bounceOutDown" id="bounceOutDown"><label for="bounceOutDown">
+				bounceOutDown</label><br>
+				<input type="radio" name="effect" value="bounceOutLeft" id="bounceOutLeft"><label for="bounceOutLeft">
+				bounceOutLeft</label><br>
+				<input type="radio" name="effect" value="bounceOutRight" id="bounceOutRight"><label for="bounceOutRight">
+				bounceOutRight</label><br>
+				<input type="radio" name="effect" value="bounceOutUp" id="bounceOutUp"><label for="bounceOutUp">
+				bounceOutUp</label><br>
+			</div>
+			<div class="category">
+				<strong>Fading Entrances</strong><br>
+				<input type="radio" name="effect" value="fadeIn" id="fadeIn"><label for="fadeIn"> fadeIn</label><br>
+				<input type="radio" name="effect" value="fadeInDown" id="fadeInDown"><label for="fadeInDown">
+				fadeInDown</label><br>
+				<input type="radio" name="effect" value="fadeInDownBig" id="fadeInDownBig"><label for="fadeInDownBig">
+				fadeInDownBig</label><br>
+				<input type="radio" name="effect" value="fadeInLeft" id="fadeInLeft"><label for="fadeInLeft">
+				fadeInLeft</label><br>
+				<input type="radio" name="effect" value="fadeInLeftBig" id="fadeInLeftBig"><label for="fadeInLeftBig">
+				fadeInLeftBig</label><br>
+				<input type="radio" name="effect" value="fadeInRight" id="fadeInRight"><label for="fadeInRight">
+				fadeInRight</label><br>
+				<input type="radio" name="effect" value="fadeInRightBig" id="fadeInRightBig"><label for="fadeInRightBig">
+				fadeInRightBig</label><br>
+				<input type="radio" name="effect" value="fadeInUp" id="fadeInUp"><label for="fadeInUp"> fadeInUp</label><br>
+				<input type="radio" name="effect" value="fadeInUpBig" id="fadeInUpBig"><label for="fadeInUpBig">
+				fadeInUpBig</label><br>
+			</div>
+			<div class="category">
+				<strong>Fading Exits</strong><br>
+				<input type="radio" name="effect" value="fadeOut" id="fadeOut"><label for="fadeOut"> fadeOut</label><br>
+				<input type="radio" name="effect" value="fadeOutDown" id="fadeOutDown"><label for="fadeOutDown">
+				fadeOutDown</label><br>
+				<input type="radio" name="effect" value="fadeOutDownBig" id="fadeOutDownBig"><label for="fadeOutDownBig">
+				fadeOutDownBig</label><br>
+				<input type="radio" name="effect" value="fadeOutLeft" id="fadeOutLeft"><label for="fadeOutLeft">
+				fadeOutLeft</label><br>
+				<input type="radio" name="effect" value="fadeOutLeftBig" id="fadeOutLeftBig"><label for="fadeOutLeftBig">
+				fadeOutLeftBig</label><br>
+				<input type="radio" name="effect" value="fadeOutRight" id="fadeOutRight"><label for="fadeOutRight">
+				fadeOutRight</label><br>
+				<input type="radio" name="effect" value="fadeOutRightBig" id="fadeOutRightBig"><label for="fadeOutRightBig">
+				fadeOutRightBig</label><br>
+				<input type="radio" name="effect" value="fadeOutUp" id="fadeOutUp"><label for="fadeOutUp"> fadeOutUp</label><br>
+				<input type="radio" name="effect" value="fadeOutUpBig" id="fadeOutUpBig"><label for="fadeOutUpBig">
+				fadeOutUpBig</label><br>
+			</div>
+			<div class="category">
+				<strong>Flippers</strong><br>
+				<input type="radio" name="effect" value="flip" id="flip"><label for="flip"> flip</label><br>
+				<input type="radio" name="effect" value="flipInX" id="flipInX"><label for="flipInX"> flipInX</label><br>
+				<input type="radio" name="effect" value="flipInY" id="flipInY"><label for="flipInY"> flipInY</label><br>
+				<input type="radio" name="effect" value="flipOutX" id="flipOutX"><label for="flipOutX"> flipOutX</label><br>
+				<input type="radio" name="effect" value="flipOutY" id="flipOutY"><label for="flipOutY"> flipOutY</label><br>
+				<br><strong>Lightspeed</strong><br>
+				<input type="radio" name="effect" value="lightSpeedIn" id="lightSpeedIn"><label for="lightSpeedIn">
+				lightSpeedIn</label><br>
+				<input type="radio" name="effect" value="lightSpeedOut" id="lightSpeedOut"><label for="lightSpeedOut">
+				lightSpeedOut</label><br>
+				<br><strong>Specials</strong><br>
+				<input type="radio" name="effect" value="hinge" id="hinge"><label for="hinge"> hinge</label><br>
+				<input type="radio" name="effect" value="rollIn" id="rollIn"><label for="rollIn"> rollIn</label><br>
+				<input type="radio" name="effect" value="rollOut" id="rollOut"><label for="rollOut"> rollOut</label><br>
+			</div>
+			<div class="category">
+				<strong>Rotating Entrances</strong><br>
+				<input type="radio" name="effect" value="rotateIn" id="rotateIn"><label for="rotateIn"> rotateIn</label><br>
+				<input type="radio" name="effect" value="rotateInDownLeft" id="rotateInDownLeft"><label
+					for="rotateInDownLeft"> rotateInDownLeft</label><br>
+				<input type="radio" name="effect" value="rotateInDownRight" id="rotateInDownRight"><label
+					for="rotateInDownRight"> rotateInDownRight</label><br>
+				<input type="radio" name="effect" value="rotateInUpLeft" id="rotateInUpLeft"><label for="rotateInUpLeft">
+				rotateInUpLeft</label><br>
+				<input type="radio" name="effect" value="rotateInUpRight" id="rotateInUpRight"><label for="rotateInUpRight">
+				rotateInUpRight</label><br>
+				<br><strong>Rotating Exits</strong><br>
+				<input type="radio" name="effect" value="rotateOut" id="rotateOut"><label for="rotateOut"> rotateOut</label><br>
+				<input type="radio" name="effect" value="rotateOutDownLeft" id="rotateOutDownLeft"><label
+					for="rotateOutDownLeft"> rotateOutDownLeft</label><br>
+				<input type="radio" name="effect" value="rotateOutDownRight" id="rotateOutDownRight"><label
+					for="rotateOutDownRight"> rotateOutDownRight</label><br>
+				<input type="radio" name="effect" value="rotateOutUpLeft" id="rotateOutUpLeft"><label for="rotateOutUpLeft">
+				rotateOutUpLeft</label><br>
+				<input type="radio" name="effect" value="rotateOutUpRight" id="rotateOutUpRight"><label
+					for="rotateOutUpRight"> rotateOutUpRight</label><br>
+			</div>
+			<div class="category">
+				<strong>Zoom Entrances</strong><br>
+				<input type="radio" name="effect" value="zoomIn" id="zoomIn"><label for="zoomIn"> zoomIn</label><br>
+				<input type="radio" name="effect" value="zoomInDown" id="zoomInDown"><label for="zoomInDown">
+				zoomInDown</label><br>
+				<input type="radio" name="effect" value="zoomInLeft" id="zoomInLeft"><label for="zoomInLeft">
+				zoomInLeft</label><br>
+				<input type="radio" name="effect" value="zoomInRight" id="zoomInRight"><label for="zoomInRight">
+				zoomInRight</label><br>
+				<input type="radio" name="effect" value="zoomInUp" id="zoomInUp"><label for="zoomInUp"> zoomInUp</label><br>
+				<br><strong>Zoom Exits</strong><br>
+				<input type="radio" name="effect" value="zoomOut" id="zoomOut"><label for="zoomOut"> zoomOut</label><br>
+				<input type="radio" name="effect" value="zoomOutDown" id="zoomOutDown"><label for="zoomOutDown">
+				zoomOutDown</label><br>
+				<input type="radio" name="effect" value="zoomOutLeft" id="zoomOutLeft"><label for="zoomOutLeft">
+				zoomOutLeft</label><br>
+				<input type="radio" name="effect" value="zoomOutRight" id="zoomOutRight"><label for="zoomOutRight">
+				zoomOutRight</label><br>
+				<input type="radio" name="effect" value="zoomOutUp" id="zoomOutUp"><label for="zoomOutUp"> zoomOutUp</label><br>
+			</div>
+			<div class="category">
+				<strong>Sliding Entrances</strong><br>
+				<input type="radio" name="effect" value="slideInUp" id="slideInUp"><label for="slideInUp"> slideInUp</label><br>
+				<input type="radio" name="effect" value="slideInDown" id="slideInDown"><label for="slideInDown">
+				slideInDown</label><br>
+				<input type="radio" name="effect" value="slideInLeft" id="slideInLeft"><label for="slideInLeft">
+				slideInLeft</label><br>
+				<input type="radio" name="effect" value="slideInRight" id="slideInRight"><label for="slideInRight">
+				slideInRight</label><br>
+				<br><strong>Sliding Exits</strong><br>
+				<input type="radio" name="effect" value="slideOutUp" id="slideOutUp"><label for="slideOutUp">
+				slideOutUp</label><br>
+				<input type="radio" name="effect" value="slideOutDown" id="slideOutDown"><label for="slideOutDown">
+				slideOutDown</label><br>
+				<input type="radio" name="effect" value="slideOutLeft" id="slideOutLeft"><label for="slideOutLeft">
+				slideOutLeft</label><br>
+				<input type="radio" name="effect" value="slideOutRight" id="slideOutRight"><label for="slideOutRight">
+				slideOutRight</label><br>
+			</div>
+		</form>
+	</div>
 
 	<script src="js/jquery.js"></script>
 

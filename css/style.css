@@ -1,0 +1,56 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Avenir Next', Avenir, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.container-animate {
+	margin-top: 100px;
+	display: inline-block;
+	vertical-align: middle;
+	overflow: hidden;
+}
+
+.container-icons {
+	margin-top: 100px;
+}
+
+@media (min-width: 650px) {
+	.container-animate {
+		display: inline-block;
+		vertical-align: middle;
+		overflow: hidden;
+	}
+}
+
+.top-menu {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.top-menu ul {
+	margin: 0;
+	padding:0;
+	list-style: none;
+	text-align: center;
+}
+
+.top-menu ul li {
+	display: inline-block;
+}
+
+.top-menu ul li a {
+	display: block;
+	font-size: 20px;
+	padding: 15px 10px;
+	text-decoration: underline;
+}
+
+.top-menu ul li span {
+	font-size: 20px;
+	padding: 15px 10px;
+}
